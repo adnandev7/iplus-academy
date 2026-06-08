@@ -86,6 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (announceCloseBtn && announcement) {
     announceCloseBtn.addEventListener('click', () => {
       announcement.style.display = 'none';
+      document.body.classList.add('announcement-closed');
       // Adjust main element's margin if needed
       const main = document.querySelector('main');
       if (main) {
